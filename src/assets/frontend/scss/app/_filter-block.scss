@@ -1,0 +1,93 @@
+// =========================================================
+// * Filter Block
+// =========================================================
+.filter-block {
+    padding: 20px 0;
+    font-family: $secondary-fonts;
+    color: $white;
+    @include primary-gradient;
+
+    .filter-menu {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap;
+
+        li+li {
+            margin-left: 20px;
+        }
+
+        li {
+            a {
+                color: $white;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+
+                img {
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                }
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+
+            &.showing-result-block {
+                width: 100%;
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .filter-block-right-part {
+        display: flex;
+        align-items: center;
+
+        >*:not(:first-child) {
+            margin-left: 20px;
+        }
+
+        h6 {
+            padding: 0;
+            margin-bottom: 0;
+        }
+
+        .form-control {
+            border-radius: 0;
+            background: $white;
+            border-color: $white;
+            font-size: 20px;
+            width: 55px;
+            text-align: center;
+            color: $input-text-color;
+        }
+
+        .btn {
+            line-height: 22px;
+            padding: 18px 24px;
+        }
+    }
+}
+
+@media (min-width:576px) {
+    .filter-block {
+        .filter-menu {
+            li.showing-result-block {
+                width: auto;
+                margin-left: 20px;
+                margin-top: 0;
+            }
+        }
+    }
+
+    .filter-block-right-part {
+        .btn {
+            min-width: 207px;
+        }
+
+    }
+}

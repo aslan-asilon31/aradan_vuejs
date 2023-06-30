@@ -1,0 +1,143 @@
+// =========================================================
+// * Footer Component
+// =========================================================
+.footer {
+    color: $white;
+    overflow: hidden;
+}
+
+.footer-top-part {
+    background-color: $primary;
+
+    .footer-top-part-listing {
+        padding: 0;
+        margin: 0;
+        justify-content: space-between;
+
+        li {
+            position: relative;
+            line-height: 30px;
+            padding-left: 40px;
+
+            img {
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+}
+
+.footer-bottom-part {
+    padding: 30px 0 0;
+
+    .footer-logo {
+        display: inline-block;
+
+        img {
+            display: block;
+        }
+    }
+
+    .social-icons {
+        display: flex;
+        padding: 0;
+        margin: 0;
+
+        li+li {
+            padding-left: 14px;
+        }
+
+        li {
+            a {
+                display: flex;
+                width: 52px;
+                height: 52px;
+                justify-content: center;
+                align-items: center;
+                background: $white;
+                border-radius: 15px;
+                transition: all 0.3s;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+
+                img {
+                    display: block;
+                    height: 25px;
+                }
+            }
+        }
+    }
+
+    .footer-links {
+        padding: 0;
+        margin: 0;
+
+        li+li {
+            margin-top: 10px;
+        }
+
+        li {
+            a {
+                color: $white;
+                text-decoration: none;
+                line-height: 30px;
+                transition: all 0.3s;
+                display: inline-block;
+                position: relative;
+
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:768px) {
+
+    .footer-top-part {
+        padding: 30px 0 !important;
+
+        .footer-top-part-listing {
+            display: flex;
+        }
+    }
+
+    .footer-bottom-part {
+        padding: 86px 0 90px;
+
+        .footer-logo {
+            margin-top: -38px;
+        }
+
+        .footer-links {
+            li+li {
+                margin-top: 22px;
+            }
+
+            li {
+                a {
+                    font-size: 22px;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width:992px) {
+    .footer-top-part {
+        .footer-top-part-listing {
+            li {
+                font-size: 22px;
+            }
+        }
+    }
+
+
+}

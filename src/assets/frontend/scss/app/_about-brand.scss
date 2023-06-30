@@ -1,0 +1,90 @@
+// =========================================================
+// * About the Brand Component
+// =========================================================
+.about-brand {
+    padding-bottom: 75px;
+
+    .about-brand-heading {
+        padding-bottom: 50px;
+        text-align: center;
+
+        .about-brand-heading-title {
+            font-family: $secondary-fonts;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: -0.04em;
+            margin-bottom: 10px;
+
+        }
+
+        .about-brand-heading-text {
+            color: $font-color;
+            font-weight: 400;
+            margin-bottom: 38px;
+        }
+    }
+
+    .about-brand-figure {
+        max-width: 100%;
+
+        .figure-img {
+            max-width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 0 auto 24px;
+            transition: all 0.25s ease-in-out;
+
+            &:hover {
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+            }
+
+        }
+
+    }
+}
+
+@media (min-width:992px) {
+    .about-brand {
+        padding-bottom: 63px;
+
+        .about-brand-heading {
+            padding-top: 50px;
+            padding-bottom: 66px;
+            text-align: left;
+
+            .about-brand-heading-title {
+                font-size: 56px;
+                line-height: 84px;
+                letter-spacing: -0.04em;
+                text-align: left;
+                z-index: 2;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    height: 4px;
+                    width: 56%;
+                    top: 40px;
+                    left: 100%;
+                    margin-left: -20%;
+                    background-color: $primary;
+                }
+            }
+
+            .about-brand-heading-text {
+                max-width: 512px;
+                font-size: 24px;
+                line-height: 36px;
+            }
+
+
+        }
+
+        .about-brand-figure {
+            .figure-img {
+                margin: 0 0 24px;
+            }
+        }
+    }
+}

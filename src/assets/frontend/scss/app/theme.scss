@@ -1,0 +1,450 @@
+/*
+* Theme Design
+* Copyright AppSeed (https://appseed.us)
+* License MIT
+*/
+
+// Global Styling 
+@import "../variables.scss";
+
+
+
+html,
+body {
+    min-width: 360px;
+    min-height: 100vh;
+    background-color: $gray-200;
+}
+
+body {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: $primary-fonts;
+    -ms-overflow-style: scrollbar;
+    -webkit-font-smoothing: subpixel-antialiased;
+    color: $font-color;
+}
+
+button {
+    box-shadow: none !important;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.primary-gradient {
+    @include primary-gradient;
+}
+
+h1,
+.h1 {
+    font-size: 43px;
+    line-height: 45px;
+}
+
+h2,
+.h2 {
+    font-size: 38px;
+    line-height: 45px;
+}
+
+h3,
+.h3 {
+    font-size: 31px;
+    line-height: 41px;
+}
+
+h4,
+.h4 {
+    font-size: 27px;
+    line-height: 35px;
+}
+
+h5,
+.h5 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+h6,
+.h6 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.text-generator {
+    @include text-primary-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.badge {
+    color: $white;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    background-color: $green;
+    border-radius: 0px;
+    padding: 0px 14px;
+}
+
+.btn-light {
+    span {
+        color: $primary !important;
+        position: relative;
+        z-index: 2;
+    }
+
+    &::before {
+        background: $primary !important;
+    }
+
+    &:hover span {
+        color: $white !important;
+    }
+}
+
+
+.main-content {
+    overflow: hidden;
+
+    .btn {
+        font-family: $primary-fonts;
+        font-weight: 400;
+        line-height: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        position: relative;
+
+        &:before {
+            content: "";
+            background-color: rgba(255, 255, 255, 0.1);
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: 50%;
+            top: 50%;
+            opacity: 0;
+            transition: all 0.3s;
+            z-index: 1;
+        }
+
+        &:hover:before,
+        &.active:before {
+            width: calc(100% + 2px);
+            height: calc(100% + 2px);
+            left: -1px;
+            top: -1px;
+            opacity: 1;
+        }
+    }
+
+}
+
+.accordion-flush {
+    .accordion-item {
+        .accordion-button {
+            font-family: $secondary-fonts;
+            color: $primary;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 24px;
+            padding: 19px 30px 19px 16px;
+
+            .icon {
+                position: absolute;
+                right: 16px;
+                top: 16px;
+                width: 24px;
+                height: 24px;
+                transform: rotate(45deg);
+                transition: all 0.25s ease-in-out;
+            }
+
+            &.collapsed .icon {
+                transform: rotate(0deg);
+            }
+
+            &::after {
+                display: none;
+            }
+
+        }
+
+        .accordion-body {
+            color: $gray-500;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            padding: 4px 16px 16px;
+        }
+    }
+}
+
+.swiper-slide>img {
+    display: block;
+    width: 100%;
+}
+
+.auto-width-slider {
+    .swiper-slide {
+        width: auto;
+
+        &>img {
+            width: 200px;
+        }
+    }
+}
+
+
+.vertical-slider {
+    height: 200px;
+}
+
+.slider-with-thumbnail {
+
+    .thumb-slider-outer {
+        max-width: 384px;
+        position: relative;
+        padding-right: 136px;
+
+        .thumb-slider {
+            position: static;
+            margin: 0 0 55px;
+
+            .swiper-slide {
+                border: solid 2px $gray-100;
+                border-radius: 8px;
+                overflow: hidden;
+
+                img {
+                    width: 52px;
+                    height: 52px;
+                    object-fit: contain;
+                    display: block;
+                    border-radius: 8px;
+                }
+            }
+
+            .swiper-slide-thumb-active {
+                border-color: $border-2;
+            }
+
+            .swiper-button-outer {
+                position: absolute;
+                right: 0;
+                top: 9px;
+
+                .swiper-button-prev,
+                .swiper-button-next {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 40px;
+                    position: relative;
+                    left: 0;
+                    top: 0;
+                    margin: 0;
+
+                    svg {
+                        path {
+                            fill: $primary !important;
+                        }
+                    }
+
+                    &::after {
+                        display: none;
+                    }
+
+                    &:hover {
+                        background: linear-gradient(91.02deg, $primary-light 0%, $primary-dark 100%);
+
+                        svg {
+                            path {
+                                fill: $white !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.like-btn {
+    display: block;
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .active-img {
+        display: none;
+    }
+
+    &.liked {
+        .normal-img {
+            display: none;
+        }
+
+        .active-img {
+            display: block;
+        }
+    }
+}
+
+#video-modal {
+    padding-left: 24px;
+    padding-right: 24px;
+
+    .modal-content {
+        border-radius: 0;
+        border: 0;
+    }
+
+    .modal-body {
+        padding: 0;
+    }
+
+    .btn-close {
+        position: absolute;
+        left: 100%;
+        bottom: 100%;
+    }
+
+    .modal-video-outer {
+        position: relative;
+        padding-bottom: 57%;
+
+        iframe {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .auto-width-slider .swiper-slide>img {
+        width: 300px;
+    }
+}
+
+@media (min-width:992px) {
+
+    h1,
+    .h1 {
+        font-weight: 800;
+        font-size: 63px;
+        line-height: 65px;
+    }
+
+    h2,
+    .h2 {
+
+        font-size: 58px;
+        line-height: 62px;
+    }
+
+    h3,
+    .h3 {
+
+        font-size: 51px;
+        line-height: 61px;
+    }
+
+    h4,
+    .h4 {
+
+        font-size: 37px;
+        line-height: 65px;
+    }
+
+    h5,
+    .h5 {
+
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    h6,
+    .h6 {
+
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .main-content {
+        .btn {
+            font-size: 18px;
+            line-height: 62px;
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: $gray-200;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: $secondary;
+    }
+}
+
+@media (min-width:1200px) {
+
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1230px;
+    }
+}
+
+// Core Components 
+@import "header";
+@import "menu";
+@import "banner";
+@import "new-product";
+@import "popular-picks";
+@import "about-brand";
+@import "payday-sale-now";
+@import "explore-categories";
+@import "review-section";
+@import "quick-questions";
+@import "follow-instagram";
+@import "pdp";
+@import "inner-page-banner";
+@import "filter-block";
+@import "collection";
+@import "index-video-embedded";
+@import "form-block";
+@import "footer";

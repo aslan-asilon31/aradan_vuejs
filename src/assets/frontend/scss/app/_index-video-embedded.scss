@@ -1,0 +1,138 @@
+// =========================================================
+// * Video Embedded
+// =========================================================
+.embedded-video-outer {
+    position: relative;
+    padding-bottom: 57%;
+    margin: 0 -12px;
+}
+
+.video-play-btn {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: solid 1px #ffffff;
+    z-index: 99;
+    border-radius: 150px;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+
+    i {
+        position: absolute;
+        width: 40px;
+        height: 30px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.3s;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            transform: rotate(45deg);
+            border-bottom: solid 2px #ffffff;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            transform: rotate(-45deg);
+            border-bottom: solid 2px #ffffff;
+        }
+    }
+
+    span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        line-height: 30px;
+        margin-left: -100px;
+        transition: all 0.3s;
+    }
+
+    &:hover {
+        i {
+            margin-left: 100px;
+        }
+
+        span {
+            margin-left: 0;
+        }
+    }
+}
+
+.video-played .video-play-btn,
+.video-played .video-img {
+    display: none;
+}
+
+.video-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    object-fit: cover;
+}
+
+.video-close-btn {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 32px;
+    height: 32px;
+    border: solid 1px #fff;
+    border-radius: 20px;
+    z-index: 8;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: none;
+}
+
+.video-close-btn:hover {
+    background-color: #ffffff;
+}
+
+#video-player {
+    display: none;
+}
+
+.video-played .video-close-btn,
+.video-played #video-player {
+    display: block;
+}
+
+.embedded-video-outer iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 992px) {
+    .embedded-video-outer {
+        padding-bottom: 0;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        width: 50%;
+    }
+}

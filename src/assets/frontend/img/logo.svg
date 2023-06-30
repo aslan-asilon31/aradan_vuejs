@@ -1,0 +1,22 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 53" width="280" height="53">
+	<title>logo-svg</title>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 31px;fill: #ffffff;font-weight: 400;font-family: "HVDComicSerifPro", "HVD Comic Serif Pro" } 
+		.t1 { font-size: 18px;fill: #ffffff;font-weight: 400;font-family: "SFSlapstickComic", "SF Slapstick Comic" } 
+		.s2 { fill: #ffffff } 
+	</style>
+	<g id="Layer">
+		<text id="Aradan" style="transform: matrix(1,0,0,1,91,25)" >
+			<tspan x="0" y="0" class="t0">A</tspan><tspan  y="0" class="t0">r</tspan><tspan  y="0" class="t0">a</tspan><tspan  y="0" class="t0">d</tspan><tspan  y="0" class="t0">a</tspan><tspan  y="0" class="t0">n</tspan><tspan  y="0" class="t0">
+</tspan>
+		</text>
+		<text id="Aslan Air Jordan" style="transform: matrix(1,0,0,1,78,44)" >
+			<tspan x="0" y="0" class="t1">A</tspan><tspan  y="0" class="t1">s</tspan><tspan  y="0" class="t1">l</tspan><tspan  y="0" class="t1">a</tspan><tspan  y="0" class="t1">n</tspan><tspan  y="0" class="t1"> </tspan><tspan  y="0" class="t1">A</tspan><tspan  y="0" class="t1">i</tspan><tspan  y="0" class="t1">r</tspan><tspan  y="0" class="t1"> </tspan><tspan  y="0" class="t1">J</tspan><tspan  y="0" class="t1">o</tspan><tspan  y="0" class="t1">r</tspan><tspan  y="0" class="t1">d</tspan><tspan  y="0" class="t1">a</tspan><tspan  y="0" class="t1">n
+</tspan>
+		</text>
+		<text id="" style="transform: matrix(1,0,0,1,119,-58)" >
+		</text>
+		<path id="Layer" class="s2" d="m81 16l-56.3 24q-7 3-11.8 3-5.4 0-7.8-3.8-1.5-2.4-0.9-6.1 0.6-3.8 3.3-8 2.3-3.4 7.4-9-1.8 2.9-2.5 5.9-1.4 5.8 2.4 8.5 1.8 1.2 4.9 1.2 2.5 0 5.7-0.8z"/>
+	</g>
+</svg>

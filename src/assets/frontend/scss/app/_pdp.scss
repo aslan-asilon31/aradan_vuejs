@@ -1,0 +1,267 @@
+// =========================================================
+// * PDP Component
+// =========================================================
+
+.pdp-banner {
+    margin: 0 -12px 20px;
+
+    .swiper-button-outer {
+        position: absolute;
+        right: 12px;
+        bottom: 12px;
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            position: relative;
+            left: 0;
+            top: 0;
+
+            &::after {
+                display: none;
+            }
+
+            svg {
+                path {
+                    fill: $primary !important;
+                }
+            }
+
+            &:hover {
+                @include primary-gradient;
+
+                svg {
+                    path {
+                        fill: $white !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.max-apoclypse {
+    .max-apoclypse-heading-outer {
+        border-bottom: 1px solid $gray-800;
+        margin-bottom: 18px;
+
+        .max-apoclypse-heading {
+            .max-apoclypse-heading-title {
+                font-family: $secondary-fonts;
+                color: $black;
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 30px;
+                margin-bottom: 20px;
+            }
+
+            .max-apoclypse-heading {
+                .max-apoclypse-heading-title {
+                    font-family: 'Poppins';
+                    color: $black;
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 30px;
+                    margin-bottom: 20px;
+                }
+
+                .max-apoclypse-heading-text {
+                    font-family: 'Ubuntu';
+                    color: $black;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                    letter-spacing: 0.02em;
+                }
+
+                .like-btn {
+                    img {
+                        width: 34px;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .product-details {
+
+        .star-rating {
+            .product-rating {
+                img {
+                    width: 16px;
+                }
+            }
+
+            .star-rating-text {
+                font-family: 'Ubuntu';
+                color: $black;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 16px;
+                letter-spacing: 0.02em;
+            }
+        }
+
+        .price {
+            font-family: 'Ubuntu';
+            color: $black;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 42px;
+            letter-spacing: 0.02em;
+            padding: 0 20px;
+            display: inline-block;
+        }
+
+        .form-select {
+            font-family: 'Ubuntu';
+            color: $primary;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 21px;
+            letter-spacing: 0.01em;
+            border: 1px solid rgba(196, 196, 196, 0.6);
+            box-shadow: none !important;
+            outline: none !important;
+            max-width: 80px;
+            background-image: url("/assets/img/ic-drop-arrow.svg");
+            background-color: rgba(255, 255, 255, 0.2);
+
+        }
+
+        .number-of-item {
+            border: 1px solid rgba(196, 196, 196, 0.6);
+            background-color: rgba(255, 255, 255, 0.2);
+
+            .number-btn {
+                font-family: 'Ubuntu';
+                color: $primary;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 42px;
+                padding: 0 9px;
+            }
+
+            .form-control {
+                font-family: 'Ubuntu';
+                color: $primary;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 42px;
+                letter-spacing: 0.01em;
+                text-align: center;
+                line-height: 53px;
+                width: 29px;
+                height: 41px;
+                border: 0px;
+                box-shadow: none !important;
+
+            }
+
+            .form-control {
+                width: 47px;
+            }
+
+        }
+
+        .cart-btn {
+            font-family: 'Ubuntu';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 28px;
+            height: 42px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+
+    .product-future-list {
+        margin: 60px -12px 10px;
+
+        .product-future-item {
+            padding: 8px;
+            text-align: center;
+            transition: all 0.3s;
+            display: block;
+            margin-left: 5px;
+
+            img {
+                width: 32px;
+                height: 32px;
+                display: inline-block;
+                margin: 0 auto 22px;
+            }
+
+            .product-future-text {
+                font-family: 'Ubuntu';
+                color: $primary;
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 15px;
+                text-align: center;
+            }
+
+            .icon {
+                width: 14px;
+                display: block;
+                right: 0;
+                top: 50%;
+                margin-top: -14px;
+                transition: all 0.25s ease-in-out;
+            }
+
+            &:hover {
+                .icon {
+                    transform: rotate(90deg);
+                }
+            }
+
+            &.active {
+                background-color: $white;
+
+                .icon {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .pdp-banner {
+        .swiper-button-outer {
+            right: 45px;
+            bottom: 30px;
+        }
+    }
+
+    .max-apoclypse {
+        .product-future-list {
+            .product-future-item {
+                width: auto;
+                padding: 10px 12px;
+
+                .product-future-text {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        .product-details {
+            .price {
+                padding: 0 35px;
+            }
+        }
+    }
+}
+
+@media (min-width:992px) {
+    .max-apoclypse .product-future-list .product-future-item {
+        margin-left: 22px;
+    }
+}

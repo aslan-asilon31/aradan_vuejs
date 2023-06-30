@@ -1,0 +1,99 @@
+// =========================================================
+// * New Product Component
+// =========================================================
+.new-product-outer {
+    padding-bottom: 35px;
+
+    .new-product {
+        border-radius: 18px;
+        background-color: $white;
+        margin-bottom: 30px;
+        transition: all 0.25s ease-in-out;
+
+        &:hover {
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+        }
+
+        .new-product-img-outer {
+            width: 126px;
+            border-radius: 18px 0 0 18px;
+
+            &.bg-pink {
+                background-color: $pink;
+            }
+
+            &.bg-indigo {
+                background-color: $indigo;
+            }
+
+            &.bg-green {
+                background-color: $green;
+            }
+
+            &.bg-dark-blue {
+                background-color: $dark-blue;
+            }
+
+
+            .new-product-img {
+                bottom: -48px;
+                right: -25px;
+
+            }
+        }
+
+        .media-body {
+            padding: 10px;
+
+            .new-product-name {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                margin-bottom: 13px;
+            }
+
+            .product-rating {
+                margin-bottom: 8px;
+
+                img {
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+
+            .new-product-price {
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+                margin-bottom: 10px;
+            }
+
+            .new-product-text {
+                color: $font-color;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                margin-bottom: 8px;
+            }
+
+            .btn-link {
+                font-family: $secondary-fonts;
+                color: $primary;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.01em;
+                text-decoration: none;
+            }
+        }
+
+    }
+
+}
+
+@media (min-width:767px) {
+    .new-product-outer {
+        padding-bottom: 65px;
+    }
+
+}

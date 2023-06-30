@@ -1,0 +1,102 @@
+// =========================================================
+// * Follow products on Instagram Component
+// ========================================================= 
+.follow-instagram {
+    background-color: $white;
+    padding: 50px 0;
+
+    .follow-instagram-title {
+        font-family: $secondary-fonts;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 20px;
+    }
+
+    .follow-instagram-figure {
+        overflow: hidden;
+        border-radius: 8px;
+
+        .figure-img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .follow-instagram-hover {
+            background: rgba(0, 0, 0, 0.51);
+            left: 0;
+            top: 100%;
+            width: 100%;
+            height: 25%;
+            transition: all 0.25s ease-in-out;
+
+            img {
+                width: 38px;
+            }
+        }
+
+        &:hover .follow-instagram-hover {
+            top: 0;
+            height: 100%;
+
+        }
+    }
+
+    .newsletter {
+        margin-top: 94px;
+
+        .newsletter-title {
+            font-family: $secondary-fonts;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 42px;
+            letter-spacing: -0.04em;
+            margin-bottom: 33px;
+
+        }
+
+        .form-control {
+            color: $gray-600;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 38px;
+            border: 0px;
+            border-bottom: 2px solid $primary;
+            height: 38px;
+            box-shadow: none !important;
+            outline: none !important;
+        }
+
+        .submit-btn {
+            color: $primary;
+            font-weight: 400;
+            line-height: 25px;
+            padding: 6px 15px;
+            height: 38px;
+            border-style: solid;
+            border-width: 0px 0px 2px 0px !important;
+            border-color: $primary !important;
+        }
+    }
+
+}
+
+
+@media (min-width:992px) {
+    .follow-instagram {
+        padding: 80px 0;
+
+        .follow-instagram-title {
+            font-size: 56px;
+            line-height: 70px;
+            margin-bottom: 60px;
+        }
+
+        .newsletter {
+            .form-control {
+                width: 377px;
+            }
+        }
+    }
+}

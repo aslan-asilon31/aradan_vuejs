@@ -1,0 +1,62 @@
+// =========================================================
+// * Header Component
+// =========================================================
+.header {
+    top: 0;
+    z-index: 999;
+}
+
+.header-top-part {
+    background-color: $white;
+
+    h6 {
+        padding: 0;
+        margin: 0;
+        transform: translateX(0);
+        animation: 12s linear 4s 1 show_msg_first, 24s linear 16s infinite show_msg;
+        white-space: nowrap;
+
+        a {
+            color: $primary;
+            font-weight: bold;
+        }
+    }
+}
+
+.sub-navigation {
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+    li+li {
+        margin-left: 28px;
+    }
+
+    li {
+        a {
+            text-decoration: none;
+            font-size: 13px;
+            line-height: 18px;
+        }
+    }
+}
+
+@keyframes show_msg_first {
+    0% {
+        transform: translateX(0%)
+    }
+
+    to {
+        transform: translateX(100%)
+    }
+}
+
+@keyframes show_msg {
+    0% {
+        transform: translateX(-100%)
+    }
+
+    to {
+        transform: translateX(100%)
+    }
+}

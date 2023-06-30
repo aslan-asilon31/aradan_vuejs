@@ -1,0 +1,279 @@
+// =========================================================
+// * Product list Component
+// =========================================================
+.product-list {
+    padding: 36px 0;
+
+    .card {
+        border: 1px solid $border-1;
+        border-radius: 12px;
+        background-color: $white;
+        padding: 16px;
+        margin: 24px auto;
+        transition: all 0.25s ease-in-out;
+
+        &:hover {
+            box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-img-outer {
+            height: 295px;
+            border-radius: 15px;
+            background-color: $gray-light;
+            padding: 10px;
+
+            .card-img {
+                max-width: 233px;
+                display: block;
+
+            }
+        }
+
+        .card-body {
+            padding: 0;
+            padding-top: 25px;
+
+            .card-title {
+                font-family: 'Ubuntu';
+                color: $gray-800;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 25px;
+            }
+
+            .card-text {
+                font-family: 'Ubuntu';
+                color: $font-color;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                min-height: 40px;
+            }
+
+            .price {
+                font-family: 'Ubuntu';
+                color: $gray-800;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 23px;
+            }
+
+            .btn {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 22px;
+                padding-left: 19px;
+                padding-right: 19px;
+            }
+        }
+    }
+}
+
+.ari-mex-banner {
+    min-height: 720px;
+    background-color: $white;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 100%;
+        top: 0;
+        background: $primary url("/assets/img/air-max.jpg") no-repeat right center;
+    }
+
+    .trending-card {
+        right: 100%;
+        bottom: 190px;
+        transform: rotate(-90deg);
+        z-index: 2;
+        margin-right: -320px;
+
+        .trending-body {
+            .trending-text {
+                font-family: $secondary-fonts;
+                color: rgba(255, 255, 255, 0.2);
+                font-weight: 500;
+                font-size: 64px;
+                line-height: 64px;
+                letter-spacing: -0.075em;
+            }
+        }
+
+        .trending-border {
+            width: 160px;
+            height: 3px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .trending-rounded {
+            width: 20px;
+            height: 20px;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    }
+
+    .ari-mex-banner-title {
+        font-family: $secondary-fonts;
+        color: $white;
+        font-weight: 600;
+        margin-bottom: 50px;
+        margin-top: 52px;
+
+    }
+
+    .ari-mex-card {
+
+        .ari-mex-card-title {
+            font-family: $secondary-fonts;
+            color: $white;
+            font-weight: 600;
+            letter-spacing: -0.075em;
+        }
+
+        .ari-mex-card-text {
+            font-family: $secondary-fonts;
+            color: $white;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            text-shadow: 6px 4px 6px $black;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+
+.ar-max-product {
+    width: 230px;
+    border-radius: 6px;
+    background-color: $white;
+    margin: 60px auto 30px;
+    transition: all 0.25s ease-in-out;
+    z-index: 2;
+
+    &:hover {
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    .ar-max-product-img-outer {
+        height: 133px;
+        border-radius: 6px;
+
+        &.bg-pink {
+            background-color: $pink;
+        }
+
+        &.bg-indigo {
+            background-color: $indigo;
+        }
+
+        &.bg-green {
+            background-color: $green;
+        }
+
+        &.bg-dark-blue {
+            background-color: $dark-blue;
+        }
+
+
+        .ar-max-product-img {
+            margin-top: -40px;
+
+        }
+    }
+
+    .media-body {
+        padding: 10px;
+
+        .ar-max-product-name {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 13px;
+        }
+
+        .like-btn {
+            width: 16px;
+        }
+
+
+        .product-rating {
+            margin-bottom: 8px;
+            text-decoration-color: $red;
+
+            img {
+                width: 12px;
+                height: 12px;
+            }
+        }
+
+        .ar-max-product-price {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 10px;
+        }
+
+        .ar-max-product-text {
+            color: $red;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            margin-bottom: 8px;
+        }
+
+        .btn-link {
+            font-family: $secondary-fonts;
+            color: $primary;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.01em;
+            text-decoration: none;
+        }
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    .ari-mex-banner {
+        .ari-mex-banner-title {
+            font-size: 40px;
+            line-height: 60px;
+            margin-bottom: 150px;
+        }
+
+        .ari-mex-card-title {
+            font-size: 150px;
+            line-height: 140px;
+        }
+
+        .ari-mex-card-text {
+            font-size: 40px;
+            line-height: 42px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .ari-mex-banner {
+        &:before {
+            content: "";
+            right: 50%;
+            margin-right: -205px;
+        }
+
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .ari-mex-banner {
+        .trending-card {
+            margin-right: -220px;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+// =========================================================
+// * Inner Page Banner
+// =========================================================
+.inner-page-banner {
+    h1 {
+        font-weight: 800;
+        font-family: $secondary-fonts;
+        position: relative;
+
+        .badge-new {
+            position: absolute;
+            left: -20px;
+            top: 0;
+            background: linear-gradient(180deg, #3EA3EA 0%, #096DBC 100%);
+            transform: rotate(-30deg);
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            border-radius: 28px;
+            font-size: 12px;
+            font-weight: 400;
+            padding: 0;
+        }
+    }
+
+    .slider-with-thumbnail {
+        padding: 30px 0;
+    }
+
+    .inner-page-banner-content {
+        position: relative;
+        z-index: 2;
+        padding: 50px 0 30px;
+    }
+
+    .inner-page-banner-background {
+        position: absolute;
+        left: 0;
+        top: -190px;
+        z-index: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .inner-page-banner {
+        .inner-page-banner-content {
+            padding-bottom: 70px;
+
+            h1 {
+                font-size: 50px;
+                line-height: 60px;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 992px) {
+    .inner-page-banner {
+        .inner-page-banner-content {
+            h1 {
+                font-size: 80px;
+                line-height: 90px;
+
+                .badge-new {
+                    width: 48px;
+                    height: 48px;
+                    line-height: 48px;
+                    border-radius: 48px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .inner-page-banner {
+        .inner-page-banner-content {
+            h1 {
+                font-size: 98px;
+                line-height: 110px;
+            }
+        }
+    }
+}

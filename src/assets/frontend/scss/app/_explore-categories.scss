@@ -1,0 +1,101 @@
+// =========================================================
+// * Explore Categories Component
+// =========================================================
+.explore-categories {
+    padding: 45px 0;
+
+    .swiper-wrapper {
+        padding: 0 16px;
+    }
+
+    .explore-categories-title {
+        font-family: $secondary-fonts;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 54px;
+    }
+
+    .explore-categories-card {
+        width: 300px;
+
+        .explore-categories-card-img {
+            border-radius: 20px;
+            object-fit: cover;
+            max-width: 100%;
+        }
+
+        .categories-card-body {
+            text-decoration: none;
+            padding: 28px 40px 28px 0px;
+            transition: all 0.25s ease-in-out;
+
+            .categories-card-body-title {
+                font-family: $secondary-fonts;
+                color: $primary;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 26px;
+                letter-spacing: -0.04em;
+                margin-bottom: 20px;
+            }
+
+            .categories-card-body-text {
+                font-family: $secondary-fonts;
+                color: $font-color;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 24px;
+                letter-spacing: -0.04em;
+            }
+
+            .arrow-icon {
+                position: absolute;
+                right: 0px;
+                top: 50%;
+                margin-top: -12px;
+                transition: all 0.25s ease-in-out;
+            }
+
+            &:hover {
+                .arrow-icon {
+                    right: 15px;
+                    transition: all 0.25s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:992px) {
+    .explore-categories {
+        padding: 100px 0px;
+
+        .swiper-wrapper {
+            padding: 0 24px;
+        }
+
+        .explore-categories-title {
+            font-size: 56px;
+            line-height: 84px;
+        }
+
+        .explore-categories-card {
+            width: 484px;
+
+            .categories-card-body {
+                .categories-card-body-title {
+                    font-size: 32px;
+                    line-height: 50px;
+                    margin-bottom: 7px;
+                }
+
+                .categories-card-body-text {
+                    font-size: 24px;
+                    line-height: 50px;
+                }
+            }
+        }
+    }
+
+}
