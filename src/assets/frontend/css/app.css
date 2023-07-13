@@ -1,91 +1,77 @@
 @charset "UTF-8";
-/*
-* Variables
-* Copyright AppSeed (https://appseed.us)
-* License MIT
-*/
-/*
-* Global Styling (edit below variables) 
-* Warn: once edited, the SCSS needs to be recompiled
-*/
-/*!
- * Bootstrap  v5.2.3 (https://getbootstrap.com/)
- * Copyright 2011-2022 The Bootstrap Authors
- * Copyright 2011-2022 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
 :root {
-  --bs-blue: #113869;
-  --bs-darkBlue: #1B4F87;
-  --bs-indigo: #2D5F84;
-  --bs-purple: #6f42c1;
-  --bs-pink: #D081A4;
-  --bs-red: #FF0000;
-  --bs-orange: #FF7A00;
-  --bs-yellow: #FFE759;
-  --bs-green: #94DB33;
-  --bs-teal: #20c997;
-  --bs-cyan: #00B9AC;
+  --bs-blue: #42b883;
+  --bs-darkBlue: #42b883;
+  --bs-indigo: #42b883;
+  --bs-purple: #42b883;
+  --bs-pink: #42b883;
+  --bs-red: #42b883;
+  --bs-orange: #42b883;
+  --bs-yellow: #42b883;
+  --bs-green: #42b883;
+  --bs-teal: #42b883;
+  --bs-cyan: #42b883;
   --bs-white: #fff;
-  --bs-gray: #717171;
-  --bs-gray-dark: #151515;
-  --bs-border-1: #D1D1D1;
-  --bs-gray-100: #E4E5EA;
-  --bs-gray-200: #EEEEEE;
-  --bs-gray-300: #e2e2e2;
-  --bs-gray-400: #9C9C9C;
+  --bs-gray: #42b883;
+  --bs-gray-dark: #42b883;
+  --bs-border-1: #42b883;
+  --bs-gray-100: #42b883;
+  --bs-gray-200: #42b883;
+  --bs-gray-300: #42b883;
+  --bs-gray-400: #42b883;
   --bs-gray-500: #747474;
   --bs-gray-600: #717171;
-  --bs-gray-700: #495057;
-  --bs-gray-800: #151515;
-  --bs-gray-900: #0D0D11;
-  --bs-primary: #113869;
-  --bs-secondary: #E0C340;
+  --bs-gray-700: #42b883;
+  --bs-gray-800: #42b883;
+  --bs-gray-900: #42b883;
+  --bs-primary: #42b883;
+  --bs-secondary: #42b883;
   --bs-success: #82d616;
-  --bs-info: #17c1e8;
-  --bs-warning: #fbcf33;
+  --bs-info: #42b883;
+  --bs-warning: #42b883;
   --bs-danger: #ea0606;
   --bs-light: #ffffff;
-  --bs-dark: #344767;
+  --bs-dark: #42b883;
   --bs-white: #fff;
   --bs-gray-light: #f3f3f3;
-  --bs-primary-rgb: 17, 56, 105;
-  --bs-secondary-rgb: 224, 195, 64;
-  --bs-success-rgb: 130, 214, 22;
-  --bs-info-rgb: 23, 193, 232;
-  --bs-warning-rgb: 251, 207, 51;
-  --bs-danger-rgb: 234, 6, 6;
-  --bs-light-rgb: 255, 255, 255;
-  --bs-dark-rgb: 52, 71, 103;
-  --bs-white-rgb: 255, 255, 255;
-  --bs-gray-light-rgb: 243, 243, 243;
-  --bs-white-rgb: 255, 255, 255;
+  --bs-primary-rgb: #42b883;
+  --bs-secondary-rgb: #42b883;
+  --bs-success-rgb: #42b883;
+  --bs-info-rgb: #42b883;
+  --bs-warning-rgb: #42b883;
+  --bs-danger-rgb: #42b883;
+  --bs-light-rgb: #42b883;
+  --bs-dark-rgb: #42b883;
+  --bs-white-rgb: #42b883;
+  --bs-gray-light-rgb: #42b883;
+  --bs-white-rgb: #42b883;
   --bs-black-rgb: 0, 0, 0;
-  --bs-body-color-rgb: 13, 13, 17;
-  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-body-color-rgb: #42b883;
+  --bs-body-bg-rgb: #42b883;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-gradient: linear-gradient(180deg, #42b883);
+  --bs-body-font-family:#42b883;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #0D0D11;
+  --bs-body-color: #42b883;
   --bs-body-bg: #fff;
   --bs-border-width: 1px;
   --bs-border-style: solid;
-  --bs-border-color: #e2e2e2;
-  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+  --bs-border-color: #42b883;
+  --bs-border-color-translucent: rgba(0, 0, 0, #42b883);
   --bs-border-radius: 0.375rem;
   --bs-border-radius-sm: 0.25rem;
   --bs-border-radius-lg: 0.5rem;
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #113869;
-  --bs-link-hover-color: #0e2d54;
-  --bs-code-color: #D081A4;
-  --bs-highlight-bg: #fffade;
+  --bs-link-color: #42b883;
+  --bs-link-hover-color: #42b883;
+  --bs-code-color: #42b883;
+  --bs-highlight-bg: #42b883;
 }
 
 *,
@@ -600,7 +586,7 @@ progress {
   margin-top: -1rem;
   margin-bottom: 1rem;
   font-size: 0.875em;
-  color: #717171;
+  color: #42b883;
 }
 .blockquote-footer::before {
   content: "— ";
@@ -2252,8 +2238,8 @@ textarea.form-control-lg {
   box-shadow: 0 0 0 0.25rem rgba(17, 56, 105, 0.25);
 }
 .form-check-input:checked {
-  background-color: #113869;
-  border-color: #113869;
+  background-color: #42b883;
+  border-color: #42b883;
 }
 .form-check-input:checked[type=checkbox] {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
@@ -2262,8 +2248,8 @@ textarea.form-control-lg {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
 }
 .form-check-input[type=checkbox]:indeterminate {
-  background-color: #113869;
-  border-color: #113869;
+  background-color: #42b883;
+  border-color: #42b883;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
 .form-check-input:disabled {
@@ -2348,7 +2334,7 @@ textarea.form-control-lg {
   width: 1rem;
   height: 1rem;
   margin-top: -0.25rem;
-  background-color: #113869;
+  background-color: #42b883;
   border: 0;
   border-radius: 1rem;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2377,7 +2363,7 @@ textarea.form-control-lg {
 .form-range::-moz-range-thumb {
   width: 1rem;
   height: 1rem;
-  background-color: #113869;
+  background-color: #42b883;
   border: 0;
   border-radius: 1rem;
   -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2830,19 +2816,19 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #113869;
-  --bs-btn-border-color: #113869;
+  --bs-btn-bg: #42b883;
+  --bs-btn-border-color: #42b883;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #0e3059;
-  --bs-btn-hover-border-color: #0e2d54;
+  --bs-btn-hover-border-color: #42b883;
   --bs-btn-focus-shadow-rgb: 53, 86, 128;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #0e2d54;
+  --bs-btn-active-bg: #42b883;
   --bs-btn-active-border-color: #0d2a4f;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #113869;
-  --bs-btn-disabled-border-color: #113869;
+  --bs-btn-disabled-bg: #42b883;
+  --bs-btn-disabled-border-color: #42b883;
 }
 
 .btn-secondary {
@@ -2999,19 +2985,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary {
-  --bs-btn-color: #113869;
-  --bs-btn-border-color: #113869;
+  --bs-btn-color: #42b883;
+  --bs-btn-border-color: #42b883;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #113869;
-  --bs-btn-hover-border-color: #113869;
+  --bs-btn-hover-bg: #42b883;
+  --bs-btn-hover-border-color: #42b883;
   --bs-btn-focus-shadow-rgb: 17, 56, 105;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #113869;
-  --bs-btn-active-border-color: #113869;
+  --bs-btn-active-bg: #42b883;
+  --bs-btn-active-border-color: #42b883;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #113869;
+  --bs-btn-disabled-color: #42b883;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #113869;
+  --bs-btn-disabled-border-color: #42b883;
   --bs-gradient: none;
 }
 
@@ -3287,7 +3273,7 @@ textarea.form-control-lg {
   --bs-dropdown-link-hover-color: #0c0c0f;
   --bs-dropdown-link-hover-bg: #EEEEEE;
   --bs-dropdown-link-active-color: #fff;
-  --bs-dropdown-link-active-bg: #113869;
+  --bs-dropdown-link-active-bg: #42b883;
   --bs-dropdown-link-disabled-color: #747474;
   --bs-dropdown-item-padding-x: 1rem;
   --bs-dropdown-item-padding-y: 0.25rem;
@@ -3552,7 +3538,7 @@ textarea.form-control-lg {
   --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
   --bs-dropdown-link-hover-bg: rgba(255, 255, 255, 0.15);
   --bs-dropdown-link-active-color: #fff;
-  --bs-dropdown-link-active-bg: #113869;
+  --bs-dropdown-link-active-bg: #42b883;
   --bs-dropdown-link-disabled-color: #747474;
   --bs-dropdown-header-color: #747474;
 }
@@ -3735,7 +3721,7 @@ textarea.form-control-lg {
 .nav-pills {
   --bs-nav-pills-border-radius: 0.375rem;
   --bs-nav-pills-link-active-color: #fff;
-  --bs-nav-pills-link-active-bg: #113869;
+  --bs-nav-pills-link-active-bg: #42b883;
 }
 .nav-pills .nav-link {
   background: none;
@@ -4290,7 +4276,7 @@ textarea.form-control-lg {
 .card-footer {
   padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
   color: var(--bs-card-cap-color);
-  background-color: var(--bs-card-cap-bg);
+  background-color: #42b883;
   border-top: var(--bs-card-border-width) solid var(--bs-card-border-color);
 }
 .card-footer:last-child {
@@ -4566,8 +4552,8 @@ textarea.form-control-lg {
   --bs-pagination-focus-bg: #EEEEEE;
   --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(17, 56, 105, 0.25);
   --bs-pagination-active-color: #fff;
-  --bs-pagination-active-bg: #113869;
-  --bs-pagination-active-border-color: #113869;
+  --bs-pagination-active-bg: #42b883;
+  --bs-pagination-active-border-color: #42b883;
   --bs-pagination-disabled-color: #717171;
   --bs-pagination-disabled-bg: #fff;
   --bs-pagination-disabled-border-color: #e2e2e2;
@@ -4810,7 +4796,7 @@ textarea.form-control-lg {
   --bs-progress-border-radius: 0.375rem;
   --bs-progress-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   --bs-progress-bar-color: #fff;
-  --bs-progress-bar-bg: #113869;
+  --bs-progress-bar-bg: #42b883;
   --bs-progress-bar-transition: width 0.6s ease;
   display: flex;
   height: var(--bs-progress-height);
@@ -4867,8 +4853,8 @@ textarea.form-control-lg {
   --bs-list-group-disabled-color: #717171;
   --bs-list-group-disabled-bg: #fff;
   --bs-list-group-active-color: #fff;
-  --bs-list-group-active-bg: #113869;
-  --bs-list-group-active-border-color: #113869;
+  --bs-list-group-active-bg: #42b883;
+  --bs-list-group-active-border-color: #42b883;
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -5468,7 +5454,7 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: flex-end;
   padding: calc(var(--bs-modal-padding) - var(--bs-modal-footer-gap) * 0.5);
-  background-color: var(--bs-modal-footer-bg);
+  background-color: #42b883;
   border-top: var(--bs-modal-footer-border-width) solid var(--bs-modal-footer-border-color);
   border-bottom-right-radius: var(--bs-modal-inner-border-radius);
   border-bottom-left-radius: var(--bs-modal-inner-border-radius);
@@ -6801,10 +6787,10 @@ textarea.form-control-lg {
 }
 
 .link-primary {
-  color: #113869 !important;
+  color: #42b883 !important;
 }
 .link-primary:hover, .link-primary:focus {
-  color: #0e2d54 !important;
+  color: #42b883 !important;
 }
 
 .link-secondary {
@@ -11045,7 +11031,7 @@ h6,
 }
 
 .text-generator {
-  background: linear-gradient(91.02deg, #4281D0 0%, #072448 85.09%, #4281D0 102.7%);
+  background: linear-gradient(91.02deg, #42b883 0%, #42b883 85.09%, #42b883 102.7%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -11067,12 +11053,12 @@ h6,
 }
 
 .btn-light span {
-  color: #113869 !important;
+  color: #42b883 !important;
   position: relative;
   z-index: 2;
 }
 .btn-light::before {
-  background: #113869 !important;
+  background: #42b883 !important;
 }
 .btn-light:hover span {
   color: #fff !important;
@@ -11111,7 +11097,7 @@ h6,
 
 .accordion-flush .accordion-item .accordion-button {
   font-family: "Poppins", sans-serif;
-  color: #113869;
+  color: #42b883;
   font-weight: 600;
   font-size: 17px;
   line-height: 24px;
@@ -11197,7 +11183,7 @@ h6,
 }
 .slider-with-thumbnail .thumb-slider-outer .thumb-slider .swiper-button-outer .swiper-button-prev svg path,
 .slider-with-thumbnail .thumb-slider-outer .thumb-slider .swiper-button-outer .swiper-button-next svg path {
-  fill: #113869 !important;
+  fill: #42b883 !important;
 }
 .slider-with-thumbnail .thumb-slider-outer .thumb-slider .swiper-button-outer .swiper-button-prev::after,
 .slider-with-thumbnail .thumb-slider-outer .thumb-slider .swiper-button-outer .swiper-button-next::after {
@@ -11341,7 +11327,7 @@ h6,
   white-space: nowrap;
 }
 .header-top-part h6 a, .header-top-part .h6 a {
-  color: #113869;
+  color: #42b883;
   font-weight: bold;
 }
 
@@ -11376,7 +11362,7 @@ h6,
   }
 }
 .navbar {
-  background: #113869;
+  background: #42b883;
 }
 .navbar .navbar-brand {
   width: 80px;
@@ -11426,7 +11412,7 @@ h6,
 }
 
 .offcanvas {
-  background: #113869;
+  background: #42b883;
 }
 
 .offcanvas-header {
@@ -11485,7 +11471,7 @@ h6,
   font-size: 22px;
   line-height: 62px;
   letter-spacing: -0.06em;
-  background: linear-gradient(91.02deg, #4281D0 0%, #072448 85.09%, #4281D0 102.7%);
+  background: linear-gradient(91.02deg, #42b883 0%, #42b883 85.09%, #42b883 102.7%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -11500,6 +11486,7 @@ h6,
   margin-bottom: 30px;
   text-align: center;
   position: relative;
+  color:black;
 }
 .main-banner .btn {
   margin: 0 auto;
@@ -11649,7 +11636,7 @@ h6,
 }
 .new-product-outer .new-product .media-body .btn-link {
   font-family: "Poppins", sans-serif;
-  color: #113869;
+  color: #42b883;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -11681,7 +11668,7 @@ h6,
 }
 .popular-picks .swiper-button-prev:hover,
 .popular-picks .swiper-button-next:hover {
-  background: linear-gradient(91.02deg, #4281D0 0%, #072448 85.09%, #4281D0 102.7%);
+  background: linear-gradient(91.02deg, #42b883 0%, #42b883 85.09%, #42b883 102.7%);
 }
 .popular-picks .swiper-button-prev:hover svg path,
 .popular-picks .swiper-button-next:hover svg path {
@@ -11786,7 +11773,7 @@ h6,
     top: 40px;
     left: 100%;
     margin-left: -20%;
-    background-color: #113869;
+    background-color: #42b883;
   }
   .about-brand .about-brand-heading .about-brand-heading-text {
     max-width: 512px;
@@ -11930,7 +11917,7 @@ h6,
 }
 .explore-categories .explore-categories-card .categories-card-body .categories-card-body-title {
   font-family: "Poppins", sans-serif;
-  color: #113869;
+  color: #42b883;
   font-weight: 600;
   font-size: 24px;
   line-height: 26px;
@@ -12012,7 +11999,7 @@ h6,
 .review-section .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 14px;
   height: 14px;
-  background-color: #113869;
+  background-color: #42b883;
   margin-left: 3px;
 }
 .review-section .vertical-slider {
@@ -12023,7 +12010,7 @@ h6,
   content: "";
   width: 4px;
   height: 138px;
-  background-color: #113869;
+  background-color: #42b883;
   position: absolute;
   left: 8px;
   top: 0;
@@ -12174,20 +12161,20 @@ h6,
   font-size: 18px;
   line-height: 38px;
   border: 0px;
-  border-bottom: 2px solid #113869;
+  border-bottom: 2px solid #42b883;
   height: 38px;
   box-shadow: none !important;
   outline: none !important;
 }
 .follow-instagram .newsletter .submit-btn {
-  color: #113869;
+  color: #42b883;
   font-weight: 400;
   line-height: 25px;
   padding: 6px 15px;
   height: 38px;
   border-style: solid;
   border-width: 0px 0px 2px 0px !important;
-  border-color: #113869 !important;
+  border-color: #42b883 !important;
 }
 
 @media (min-width: 992px) {
@@ -12226,7 +12213,7 @@ h6,
 }
 .pdp-banner .swiper-button-outer .swiper-button-prev svg path,
 .pdp-banner .swiper-button-outer .swiper-button-next svg path {
-  fill: #113869 !important;
+  fill: #42b883 !important;
 }
 .pdp-banner .swiper-button-outer .swiper-button-prev:hover,
 .pdp-banner .swiper-button-outer .swiper-button-next:hover {
@@ -12291,7 +12278,7 @@ h6,
 }
 .max-apoclypse .product-details .form-select {
   font-family: "Ubuntu";
-  color: #113869;
+  color: #42b883;
   font-weight: 400;
   font-size: 24px;
   line-height: 21px;
@@ -12309,7 +12296,7 @@ h6,
 }
 .max-apoclypse .product-details .number-of-item .number-btn {
   font-family: "Ubuntu";
-  color: #113869;
+  color: #42b883;
   font-weight: 400;
   font-size: 24px;
   line-height: 42px;
@@ -12317,7 +12304,7 @@ h6,
 }
 .max-apoclypse .product-details .number-of-item .form-control {
   font-family: "Ubuntu";
-  color: #113869;
+  color: #42b883;
   font-weight: 400;
   font-size: 18px;
   line-height: 42px;
@@ -12359,7 +12346,7 @@ h6,
 }
 .max-apoclypse .product-future-list .product-future-item .product-future-text {
   font-family: "Ubuntu";
-  color: #113869;
+  color: #42b883;
   font-weight: 700;
   font-size: 11px;
   line-height: 15px;
@@ -12605,7 +12592,7 @@ h6,
   right: 0;
   height: 100%;
   top: 0;
-  background: #113869 url("/assets/img/air-max.jpg") no-repeat right center;
+  background: #42b883 url("/assets/img/air-max.jpg") no-repeat right center;
 }
 .ari-mex-banner .trending-card {
   right: 100%;
@@ -12657,7 +12644,7 @@ h6,
 
 .ar-max-product {
   width: 230px;
-  border-radius: 6px;
+  /* border-radius: 6px; */
   background-color: #fff;
   margin: 60px auto 30px;
   transition: all 0.25s ease-in-out;
@@ -12669,22 +12656,9 @@ h6,
 .ar-max-product .ar-max-product-img-outer {
   height: 133px;
   border-radius: 6px;
+  background-color: #42b883;
 }
-.ar-max-product .ar-max-product-img-outer.bg-pink {
-  background-color: #D081A4;
-}
-.ar-max-product .ar-max-product-img-outer.bg-indigo {
-  background-color: #2D5F84;
-}
-.ar-max-product .ar-max-product-img-outer.bg-green {
-  background-color: #94DB33;
-}
-.ar-max-product .ar-max-product-img-outer.bg-dark-blue {
-  background-color: #1B4F87;
-}
-.ar-max-product .ar-max-product-img-outer .ar-max-product-img {
-  margin-top: -40px;
-}
+
 .ar-max-product .media-body {
   padding: 10px;
 }
@@ -12693,6 +12667,7 @@ h6,
   font-size: 14px;
   line-height: 16px;
   margin-bottom: 13px;
+  text-align:center;
 }
 .ar-max-product .media-body .like-btn {
   width: 16px;
@@ -12720,7 +12695,7 @@ h6,
 }
 .ar-max-product .media-body .btn-link {
   font-family: "Poppins", sans-serif;
-  color: #113869;
+  color: #42b883;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -12933,7 +12908,7 @@ h6,
 }
 
 .footer-top-part {
-  background-color: #113869;
+  background-color: #42b883;
 }
 .footer-top-part .footer-top-part-listing {
   padding: 0;
