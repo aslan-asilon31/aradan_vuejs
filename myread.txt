@@ -1,0 +1,10 @@
+==============references
+https://www.codecheef.org/article/laravel-vue-js-crud-example-with-file-upload-and-pagination
+
+===== when cannot push to github 
+after generate new token
+git remote set-url origin https://<token>@github.com/<username>/<repo>
+
+
+=== state manajgement using pinia
+https://blog.logrocket.com/complex-vue-3-state-management-pinia/

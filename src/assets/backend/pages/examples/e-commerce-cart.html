@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    <!-- // css table design -->
+    <style>
+        .mr-2{
+            margin-right: 20px;
+            }
+
+            .divTable{
+                display: table;
+                width: 100%;
+            }
+            .rowTable {
+                display: table-row;
+            }
+            .divTableHeading {
+                display: table-header-group;
+            }
+            .divTableCol, .divTableHead {
+                border-bottom: 1px solid #eee;
+                display: table-cell;
+                padding: 3px 10px;
+            }
+            .divTableHeading {
+                background-color: #EEE;
+                display: table-header-group;
+                font-weight: bold;
+            }
+            .divTableFoot {
+                background-color: #EEE;
+                display: table-footer-group;
+                font-weight: bold;
+            }
+            .divTableBody {
+                display: table-row-group;
+            }
+
+    </style>
+    <!-- /// add delete button with input in the middle -->
+    <style>
+	span {cursor:pointer; }
+		.number{
+			margin:20px;
+		}
+		.minus, .plus{
+			width:20px;
+			height:20px;
+			background:indigo;
+			/* border-radius:4px; */
+			/* padding:8px 5px 8px 5px; */
+			border:1px solid #ddd;
+      display: inline-block;
+      /* vertical-align: middle; */
+      text-align: center;
+		}
+		input{
+			height:34px;
+      width: 50px;
+      font-size: 20px;
+			border:1px solid #ddd;
+			/* border-radius:4px; */
+      display: inline-block;
+        }
+    </style>
+</head>
+<body class="bg-indigo text-white">
+      <!-- Navbar -->
+  <nav class=" navbar navbar-expand navbar-white navbar-light  bg-indigo " >
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item text-white">
+        <a class="nav-link text-white" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item text-white d-none  d-sm-inline-block">
+        <a href="../../index3.html" class="nav-link text-white  ">Home</a>
+      </li>
+      <li class="nav-item text-white d-none d-sm-inline-block">
+        <a href="#" class="nav-link text-white  ">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search text-white"></i>
+        </a>
+        <div class="navbar-search-block ">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar " type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search "></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-comments text-white"></i>
+          <span class="badge badge-danger navbar-badge">3</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Brad Diesel
+                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Call me whenever you can...</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  John Pierce
+                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">I got your message bro</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Nora Silvester
+                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">The subject goes here</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+        </div>
+      </li>
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell text-white"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+  
+    <div class="container" style="background: linear-gradient(to right, #6366F1, #3B82F6, #EC4899);">
+        <div class="divTable div-hover">
+            
+                <div class="rowTable bg-primary text-white pb-2 bg-pink">
+                    <div class="divTableCol">Product</div>
+                    <div class="divTableCol">Authorized</div>
+                    <div class="divTableCol">Quantity</div>
+                    <div class="divTableCol">Price</div>
+                    <div class="divTableCol">Total</div>
+                    <div class="divTableCol">Actions</div>
+                </div>
+            
+            
+                <div class="rowTable">
+                    <div class="divTableCol">
+                        <div class="media">
+                            <a class="thumbnail pull-left mr-2" href="#">
+                                <img class="media-object" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFLUKa1_4ANg6LBvqpz_zcCnjzVFxXk0JlSgzJnp8W9uqL0VioOGUWfw" style="width: 72px; height: 72px;" />
+                            </a>
+                            <div class="media-body text-white">
+                                <h4 class="media-heading text-white"><span href="#">Product 1</span></h4>
+                                <h5 class="media-heading">via Catalfini, Roma <a href="#">Noto Hotel </a></h5>
+                                <span>Status: </span><span class="text-white"><strong>Pending request</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divTableCol"><strong class="text-white">Pending</strong></div>
+                    <div class="divTableCol">
+                        <!-- <input type="email" class="form-control" id="exampleInputEmail1" value="3" /> -->
+                        <div class="number">
+                            <span class="minus" style="font-weight:bold;">-</span>
+                            <input type="text " value="1"/>
+                            <span class="plus">+</span>
+                        </div>
+                    </div>
+                    <div class="divTableCol"><strong>Rp 560.670</strong></div>
+                    <div class="divTableCol"><strong>Rp 560.670</strong></div>
+                    <div class="divTableCol">
+                        <button type="button" class="btn btn-danger"><span class="fa fa-remove"></span> Remove</button>
+                    </div>
+                </div>
+                <div class="rowTable">
+                    <div class="divTableCol"></div>
+                    <div class="divTableCol"></div>
+                    <div class="divTableCol"></div>
+                    <div class="divTableCol"><h5>Subtotal</h5></div>
+                    <div class="divTableCol">
+                        <h5><strong>Rp 560.670</strong></h5>
+                    </div>
+                </div>
+                <div class="rowTable">
+                    <div class="divTableCol"></div>
+                    <div class="divTableCol"></div>
+                    <div class="divTableCol"></div>
+                    <div class="divTableCol"><h5>Total Price</h5></div>
+                    <div class="divTableCol">
+                        <h5><strong>RP 560.670</strong></h5>
+                    </div>
+                </div>
+                <div class="rowTable">
+                    <div class="divTableCol"></div>
+                    <div class="divTableCol"></div>
+                    <div class="divTableCol"></div>
+                    <div class="divTableCol"><h3>Total</h3></div>
+                    <div class="divTableCol">
+                        <h3><strong>Rp 560.670</strong></h3>
+                    </div>
+                </div>
+                <div class="rowTable">
+                    <div class="divTableCol"></div>
+                    <div class="divTableCol"></div>
+                    <div class="divTableCol"></div>
+                    <div class="divTableCol">
+                        <button type="button" class="btn btn-default col-6"></span> Continue Shopping </button>
+                    </div>
+                    <div class="divTableCol">
+                        <button type="button" class="btn btn-success">Checkout</span></button>
+                    </div>
+                </div>        
+        </div>
+    </div>
+
+
+    
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- /// add delete button with input in the middle -->
+<script>
+	$(document).ready(function() {
+			$('.minus').click(function () {
+				var $input = $(this).parent().find('input');
+				var count = parseInt($input.val()) - 1;
+				count = count < 1 ? 1 : count;
+				$input.val(count);
+				$input.change();
+				return false;
+			});
+			$('.plus').click(function () {
+				var $input = $(this).parent().find('input');
+				$input.val(parseInt($input.val()) + 1);
+				$input.change();
+				return false;
+			});
+		});
+</script>
+</body>
+</html>

@@ -1,3 +1,21 @@
+<script>
+import { RouterLink, RouterView } from 'vue-router'
+import ic_facebook from '@/assets/frontend/img/ic-facebook.svg'
+import ic_github from '@/assets/frontend/img/ic-github.svg'
+import ic_google from '@/assets/frontend/img/ic-google.svg'
+
+export default {
+    name: 'StartNavbar',
+    data() {
+        return {
+            ic_facebook: ic_facebook,
+            ic_github: ic_github,
+            ic_google: ic_google,
+        };
+    },
+}
+</script>
+
 <template>
     <!-- Start Form Block -->
     <section class="form-block">
@@ -12,17 +30,17 @@
                 <ul class="sign-in-using-list d-flex justify-content-center">
                 <li>
                     <a href="#" title="Facebook">
-                    <img src="assets/img/ic-facebook-w.svg" alt="Facebook" />
+                    <img :src="ic_facebook" alt="Facebook" />
                     </a>
                 </li>
                 <li>
                     <a href="#" title="Github">
-                    <img src="assets/img/ic-github.svg" alt="Github" />
+                    <img :src="ic_github" alt="Github" />
                     </a>
                 </li>
                 <li>
                     <a href="#" title="Google">
-                    <img src="assets/img/ic-google.svg" alt="Google" />
+                    <img :src="ic_google" alt="Google" />
                     </a>
                 </li>
                 </ul>

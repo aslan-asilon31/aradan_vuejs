@@ -47,7 +47,12 @@ const router = createRouter({
       component: PostsView
     },
     {
-      path: '/product',
+      path: '/dashboard',
+      name: 'dashboard',
+      component: () => import('../views/dashboard/Dashboard.vue')
+    },
+    {
+      path: '/products',
       name: 'product',
       component: () => import('../views/products/Product.vue')
     },
